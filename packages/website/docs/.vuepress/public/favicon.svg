@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg viewBox="0 0 13 13" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+  <defs>
+    <g id="e">
+      <path d="M4,0L0,0L0,4L4,4"></path>
+      <path d="M0,2L4,2"></path>
+    </g>
+  </defs>
+  <rect class="background" x="1.5" y="1.5" width="10" height="10"></rect>
+  <use x="1.5" y="1.5" xlink:href="#e"></use>
+  <g transform="rotate(90)">
+    <use x="1.5" y="-11.5" xlink:href="#e"></use>
+  </g>
+  <g transform="rotate(90)">
+    <use x="7.5" y="-5.5" xlink:href="#e"></use>
+  </g>
+  <rect class="content" x="7.5" y="7.5" width="4" height="4"></rect>
+  <style>
+    svg {
+      stroke-linecap: round;
+      stroke-linejoin: round;
+      --color: #ffffff;
+      --background-color: #7c00fc;
+    }
+
+    use {
+      stroke: var(--color);
+      fill: none
+    }
+
+    rect.background {
+      stroke: var(--background-color);
+      fill: var(--background-color);
+      stroke-width: 3px;
+    }
+
+    rect.content {
+      stroke: var(--color);
+      fill: var(--color);
+    }
+  </style>
+</svg>
