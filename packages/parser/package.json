@@ -2,9 +2,12 @@
   "name": "erabasic-parser",
   "version": "0.0.0",
   "description": "Parser for EraBasic.",
-  "main": "",
+  "main": "dist/erabasic-parser.umd.js",
+  "module": "dist/erabasic-parser.es.js",
+  "types": "dist/index.d.ts",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "rollup -c",
+    "test": "vitest"
   },
   "repository": {
     "type": "git",
@@ -19,5 +22,26 @@
     "url": "https://github.com/TacitCoder/emm/issues"
   },
   "homepage": "https://github.com/TacitCoder/emm/packages/parser#readme",
-  "private": true
+  "private": true,
+  "files": [
+    "dist"
+  ],
+  "exports": {
+    ".": {
+      "import": "./dist/erabasic-parser.es.js",
+      "require": "./dist/erabasic-parser.umd.js"
+    }
+  },
+  "dependencies": {
+    "erabasic-grammar": "link:..\\grammar",
+    "peggy": "^1.2.0",
+    "pegjs-backtrace": "^0.2.1"
+  },
+  "devDependencies": {
+    "@rollup/plugin-commonjs": "^21.0.3",
+    "grammkit": "^0.7.1",
+    "rollup": "^2.70.1",
+    "rollup-plugin-typescript2": "^0.31.2",
+    "vitest": "^0.8.4"
+  }
 }
