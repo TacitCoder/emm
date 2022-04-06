@@ -4,6 +4,12 @@
   "description": "Desktop Container of Era Mod Manager.",
   "main": "",
   "scripts": {
+    "init": "ni",
+    "upgrade": "nu",
+    "dev": "tauri dev",
+    "build": "tauri build",
+    "clean": "rimraf node_modules",
+    "generate:icon": "esmo scripts/generateIcon.ts && tauricon node_modules/favicon.png",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -19,5 +25,14 @@
     "url": "https://github.com/TacitCoder/emm/issues"
   },
   "homepage": "https://github.com/TacitCoder/emm/packages/desktop#readme",
-  "private": true
+  "private": true,
+  "dependencies": {
+    "@tauri-apps/tauricon": "link:..\\..\\dependencies\\tauricon"
+  },
+  "devDependencies": {
+    "@tauri-apps/cli": "^1.0.0-rc.8",
+    "@types/sharp": "0.29.5",
+    "sharp": "0.29.3",
+    "svgo": "^2.8.0"
+  }
 }

@@ -4,6 +4,7 @@
   "description": "Grammar for EraBasic.",
   "main": "",
   "scripts": {
+    "clean": "echo \"Error: no clean specified\"",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
