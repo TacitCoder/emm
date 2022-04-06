@@ -1,0 +1,6 @@
+dependencies
+dist
+node_modules
+target
+*.log
+pnpm-lock.yaml
