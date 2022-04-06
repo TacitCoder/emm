@@ -1,0 +1,43 @@
+@precedence {
+  left @left
+  right @right
+  assign @right
+}
+
+@top Script { outerStatement* }
+
+outerStatement { LineComment | EmptyLine | Function }
+
+EmptyLine { ws* lb }
+
+Function { ws* '@' ws* FunctionName ws* lb statement+ }
+
+statement { !left ( LineComment | EmptyLine | Assignment ) }
+
+Assignment { ws* VariableName ws* !assign '=' ws* Expression+ ws* Comment? lb }
+
+Expression { digits '+' digits }
+
+@tokens {
+
+  LineComment { $[ \t]* ';' $[ \t]* ![\n]* lb }
+  
+  Comment { ';' $[ \t]* ![\n]* }
+  
+  digits { $[0-9]+ }
+
+  VariableName { ![ \n\t\r@;=]+ }
+
+  FunctionName { ![ \n\t\r]+ }
+
+  notLB { '\r'? '\n' }
+
+  lb { '\r'? '\n' }
+
+  ws { $[ \t] }
+
+  notWS { ![ \n\t\r] }
+
+}
+
+@detectDelim
