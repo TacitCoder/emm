@@ -1,0 +1,23 @@
+{
+  "name": "emm-desktop",
+  "version": "0.0.0",
+  "description": "Desktop Container of Era Mod Manager.",
+  "main": "",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/TacitCoder/emm.git"
+  },
+  "keywords": [
+    "desktop"
+  ],
+  "author": "Tacit Coder <tacitcoder@gmail.com>",
+  "license": "GPL-3.0+",
+  "bugs": {
+    "url": "https://github.com/TacitCoder/emm/issues"
+  },
+  "homepage": "https://github.com/TacitCoder/emm/packages/desktop#readme",
+  "private": true
+}

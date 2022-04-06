@@ -1,0 +1,23 @@
+{
+  "name": "erabasic-parser",
+  "version": "0.0.0",
+  "description": "Parser for EraBasic.",
+  "main": "",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/TacitCoder/emm.git"
+  },
+  "keywords": [
+    "parser"
+  ],
+  "author": "Tacit Coder <tacitcoder@gmail.com>",
+  "license": "GPL-3.0+",
+  "bugs": {
+    "url": "https://github.com/TacitCoder/emm/issues"
+  },
+  "homepage": "https://github.com/TacitCoder/emm/packages/parser#readme",
+  "private": true
+}

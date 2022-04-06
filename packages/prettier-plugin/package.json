@@ -1,0 +1,24 @@
+{
+  "name": "prettier-plugin-erabasic",
+  "version": "0.0.0",
+  "description": "Prettier Plugin for EraBasic.",
+  "main": "",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/TacitCoder/emm.git"
+  },
+  "keywords": [
+    "prettier-plugin",
+    "erabasic"
+  ],
+  "author": "Tacit Coder <tacitcoder@gmail.com>",
+  "license": "GPL-3.0+",
+  "bugs": {
+    "url": "https://github.com/TacitCoder/emm/issues"
+  },
+  "homepage": "https://github.com/TacitCoder/emm/packages/prettier-plugin#readme",
+  "private": true
+}
