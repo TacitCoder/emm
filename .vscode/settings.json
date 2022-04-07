@@ -1,0 +1,27 @@
+{
+  "i18n-ally.sourceLanguage": "en",
+  "i18n-ally.keystyle": "nested",
+  "i18n-ally.localesPaths": "packages/frontend/src/locales",
+  "i18n-ally.sortKeys": true,
+  "prettier.enable": false,
+  "typescript.tsdk": "node_modules/typescript/lib",
+  "editor.codeActionsOnSave": {
+    "source.fixAll.eslint": true,
+  },
+  "editor.formatOnSave": false,
+  "i18n-ally.enabledFrameworks": [
+    "vue-sfc",
+    "vue"
+  ],
+  "npm.packageManager": "pnpm",
+  "npm.exclude": [
+    "**/dependencies/**",
+    "**/packages/**",
+  ],
+  "rust-analyzer.linkedProjects": [
+    "packages/desktop/Cargo.toml"
+  ],
+  "npm.autoDetect": "on",
+  "editor.tabSize": 2,
+  "editor.renderWhitespace": "boundary",
+}
