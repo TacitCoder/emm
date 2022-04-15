@@ -9,7 +9,7 @@
     "upgrade": "nu",
     "dev": "nr -C packages/desktop dev",
     "dev:docs": "nr -C packages/website dev",
-    "build": "nr -C packages/frontend build:tauri",
+    "build": "nr -C packages/frontend build",
     "build:docs": "nr -C packages/website build",
     "commit": "cz",
     "changelog": "conventional-changelog -p angular -i CHANGELOG.md -s",
@@ -48,9 +48,9 @@
     "enquirer": "^2.3.6",
     "esno": "^0.14.1",
     "execa": "^6.1.0",
-    "pnpm": "^6.32.4",
+    "pnpm": "^6.32.6",
     "rimraf": "^3.0.2",
-    "semver": "^7.3.5",
+    "semver": "^7.3.7",
     "standard-version": "^9.3.2"
   }
 }
