@@ -3,6 +3,11 @@ declare module '*.peggy?raw' {
   export default text
 }
 
+declare module '*.grammar?raw' {
+  const text = ''
+  export default text
+}
+
 declare module 'pegjs-backtrace' {
   export default class Tracer {
     // eslint-disable-next-line @typescript-eslint/no-unused-vars

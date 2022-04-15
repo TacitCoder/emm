@@ -2,9 +2,9 @@
   "name": "erabasic-parser",
   "version": "0.0.0",
   "description": "Parser for EraBasic.",
-  "main": "dist/erabasic-parser.umd.js",
-  "module": "dist/erabasic-parser.es.js",
-  "types": "dist/index.d.ts",
+  "main": "./dist/erabasic-parser.umd.js",
+  "module": "./dist/erabasic-parser.es.js",
+  "types": "./dist/index.d.ts",
   "scripts": {
     "build": "rollup -c",
     "test": "vitest",
@@ -34,6 +34,7 @@
     }
   },
   "dependencies": {
+    "@lezer/generator": "^0.15.4",
     "erabasic-grammar": "link:..\\grammar",
     "peggy": "^1.2.0",
     "pegjs-backtrace": "^0.2.1"

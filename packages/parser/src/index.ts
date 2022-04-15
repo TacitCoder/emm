@@ -1,7 +1,10 @@
 import { generate } from 'peggy'
 import type { Parser as PeggyParserType } from 'peggy'
 import Tracer from 'pegjs-backtrace'
+import { buildParser } from '@lezer/generator'
+import type { LRParser } from '@lezer/lr'
 import EraBasicPeggy from 'erabasic-grammar/erabasic.peggy?raw'
+import EraBasicLezer from 'erabasic-grammar/erabasic.grammar?raw'
 
 export interface Parser {
   parse(text: string): Record<string, any>
@@ -13,21 +16,18 @@ export class PeggyParser implements Parser {
     try {
       parser = generate(EraBasicPeggy, { trace: true })
     }
-    catch (e) {
+    catch (e: any) {
       throw new Error(e)
     }
     const tracer = new Tracer(text, { useColor: false })
     try {
       return parser.parse(text, { tracer })
     }
-    catch (e) {
+    catch (e: any) {
       throw new Error(e)
     }
   }
 }
-
-export class LezerParser implements Parser {
-  parse(text: string): Record<string, any> {
-    throw new Error('Method not implemented.')
-  }
+export function getLezerParser(): LRParser {
+  return buildParser(EraBasicLezer)
 }
