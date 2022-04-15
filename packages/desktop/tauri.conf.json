@@ -1,0 +1,44 @@
+{
+  "package": {
+    "productName": "emm-desktop",
+    "version": "0.0.0"
+  },
+  "build": {
+    "distDir": "../frontend/dist",
+    "devPath": "http://localhost:3000",
+    "beforeDevCommand": "nr -C ../frontend dev",
+    "beforeBuildCommand": "nr -C ../frontend build"
+  },
+  "tauri": {
+    "allowlist": {
+      "all": true,
+      "dialog": {
+        "message": true
+      },
+      "fs": {
+        "all": true,
+        "scope": [
+          "*"
+        ]
+      },
+      "window": {
+        "center": true,
+        "setSize": true,
+        "show": true
+      }
+    },
+    "windows": [
+      {
+        "title": "Era Mod Manager",
+        "width": 100,
+        "height": 100,
+        "transparent": true,
+        "center": true,
+        "decorations": false
+      }
+    ],
+    "security": {
+      "csp": null
+    }
+  }
+}

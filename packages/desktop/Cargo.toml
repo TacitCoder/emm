@@ -1,0 +1,39 @@
+[package]
+name = "emm-desktop"
+version = "0.1.0"
+edition = "2021"
+description = "Backend of Era Mod Manager."
+
+[dependencies]
+chardetng = "*"
+diff = "*"
+dirs = "*"
+encoding_rs = "*"
+lzma-rs = "*"
+serde = { version = "*", features = ["derive"] }
+serde_json = "*"
+tauri = { version = "1.0.0-rc.6", features = ["api-all", "dialog"] }
+window-shadows = "*"
+window-vibrancy = "*"
+zip = "*"
+zip-extensions = "*"
+
+[dependencies.tauri-plugin-fs-watch]
+path = "../../dependencies/tauri-plugin-fs-watch"
+
+[dependencies.tauri-plugin-log]
+path = "../../dependencies/tauri-plugin-log"
+
+[dependencies.tauri-plugin-fs-extra]
+path = "../../dependencies/tauri-plugin-fs-extra"
+
+[build-dependencies]
+tauri-build = { version = "1.0.0-rc.5", features = [] }
+
+[features]
+# by default tauri runs in production mode
+# when `tauri dev` runs it is executed with `cargo run --no-default-features` if `devPath` is an URL
+default = ["custom-protocol"]
+# this feature is used used for production builds where `devPath` points to the filesystem
+# DO NOT remove this
+custom-protocol = ["tauri/custom-protocol"]

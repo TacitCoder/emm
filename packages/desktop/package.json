@@ -8,7 +8,7 @@
     "upgrade": "nu",
     "dev": "tauri dev",
     "build": "tauri build",
-    "clean": "rimraf node_modules",
+    "clean": "rimraf target node_modules",
     "generate:icon": "esmo scripts/generateIcon.ts && tauricon node_modules/favicon.png",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
