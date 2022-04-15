@@ -4,6 +4,7 @@
   "description": "Prettier Plugin for EraBasic.",
   "main": "",
   "scripts": {
+    "clean": "echo \"Error: no clean specified\"",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -20,5 +21,14 @@
     "url": "https://github.com/TacitCoder/emm/issues"
   },
   "homepage": "https://github.com/TacitCoder/emm/packages/prettier-plugin#readme",
-  "private": true
+  "private": true,
+  "dependencies": {
+    "erabasic-parser": "link:..\\parser"
+  },
+  "devDependencies": {
+    "prettier": "2.5.1",
+    "rollup": "^2.70.1",
+    "rollup-plugin-typescript2": "^0.31.2",
+    "vitest": "^0.8.4"
+  }
 }
