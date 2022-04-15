@@ -1,0 +1,108 @@
+:root
+  --sc-sys-state-hover-opacity .08
+  --sc-sys-state-focus-opacity .12
+  --sc-sys-state-pressed-opacity .12
+  --sc-sys-state-dragged-opacity .16
+  --sc-sys-state-disabled-container-opacity .12
+  --sc-sys-state-disabled-on-container-opacity .38
+
+:root
+  .surface
+    &.elevation1
+      box-shadow 0 1px 2px rgba(0, 0, 0, .3), 0 1px 3px 1px rgba(0, 0, 0, .15)
+
+      .container
+        background-color var(--sc-sys-color-primary)
+        opacity .05
+
+    &.elevation2
+      box-shadow 0 1px 2px rgba(0, 0, 0, .3), 0 2px 6px 2px rgba(0, 0, 0, .15)
+
+      .container
+        background-color var(--sc-sys-color-primary)
+        opacity .08
+
+    &.elevation3
+      box-shadow 0 1px 3px rgba(0, 0, 0, .3), 0 4px 8px 3px rgba(0, 0, 0, .15)
+
+      .container
+        background-color var(--sc-sys-color-primary)
+        opacity .11
+
+    &.elevation4
+      box-shadow 0 2px 3px rgba(0, 0, 0, .3), 0 6px 10px 4px rgba(0, 0, 0, .15)
+
+      .container
+        background-color var(--sc-sys-color-primary)
+        opacity .12
+
+    &.elevation5
+      box-shadow 0 4px 4px rgba(0, 0, 0, .3), 0 8px 12px 6px rgba(0, 0, 0, .15)
+
+      .container
+        background-color var(--sc-sys-color-primary)
+        opacity .14
+
+:root
+  -webkit-font-smoothing antialiased
+  -moz-osx-font-smoothing grayscale
+
+.grow
+  flex-grow 1
+
+.flex
+  display flex
+
+.col
+  flex-direction column
+
+.expand
+  position absolute
+  top 0
+  bottom 0
+  left 0
+  right 0
+
+@media (prefers-reduced-motion reduce)
+  .fa-beat, .fa-bounce, .fa-fade, .fa-beat-fade, .fa-flip, .fa-pulse, .fa-shake, .fa-spin, .fa-spin-pulse
+    -webkit-animation-delay unset
+    animation-delay unset
+    -webkit-animation-duration 2s
+    animation-duration 2s
+    -webkit-animation-iteration-count infinite
+    animation-iteration-count infinite
+    transition-delay unset
+    transition-duration unset
+
+// Span Charm
+// :hover
+//   &>.state
+//     opacity var(--sc-sys-state-hover-opacity)
+
+// :active
+//   &>.state
+//     opacity var(--sc-sys-state-pressed-opacity)
+
+// .active
+//   &>.container
+//     background-color var(--sc-sys-color-secondary-container)
+
+//   &>.content
+//     color var(--sc-sys-color-on-secondary-container)
+
+// .disabled
+//   .container
+//     background-color var(--sc-sys-color-on-surface)
+//     opacity var(--sc-sys-state-disabled-container-opacity)
+
+//   .content
+//     color var(--sc-sys-color-on-surface)
+//     opacity var(--sc-sys-state-disabled-on-container-opacity)
+
+//   &:hover
+//     &>.state
+//       opacity 0
+
+//   &:active
+//     &>.state
+//       opacity 0

@@ -1,0 +1,28 @@
+first-run:
+  heading: First Run
+  text:
+    - It seems like it's the first time you start the app.
+    - >-
+      By clicking the "Accept" button below, Current Working Directory will be
+      used as the Root Folder, and a Folder named "MOD/" will be created in it,
+      so It's recommend to place the App in Era Game Root Folder or an Empty
+      Folder.
+settings:
+  author-id: Author ID (A-Z_a-z)
+  author-name: Author Name (Optional)
+  developer-info: Developer Info
+  general: General
+  language: Language
+  strict-auth: Restricted Edit Authentication Mode
+  strict-auth-abbr: You can't edit other's mod.
+  theme-color: Theme Color
+  theme-mode:
+    auto: Auto
+    dark: Dark
+    light: Light
+    text: Theme Mode
+  user:
+    id:
+      placeholder: your_unique_id
+    name:
+      placeholder: Your Name for Display

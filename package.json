@@ -9,7 +9,7 @@
     "upgrade": "nu",
     "dev": "nr -C packages/desktop dev",
     "dev:docs": "nr -C packages/website dev",
-    "build": "nr -C packages/frontend build",
+    "build": "nr -C packages/desktop build",
     "build:docs": "nr -C packages/website build",
     "commit": "cz",
     "changelog": "conventional-changelog -p angular -i CHANGELOG.md -s",

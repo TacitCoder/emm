@@ -1,0 +1,10 @@
+first-run:
+  heading: 首次启动
+settings:
+  general: 概览
+  theme-mode: Theme Mode
+  user:
+    id:
+      placeholder: 你的独特ID
+    name:
+      placeholder: 用于显示的作者名
