@@ -1,4 +1,4 @@
-import { run } from "./utils"
+import { run } from './utils'
 
 const dependencies = [
   {
@@ -20,9 +20,8 @@ const dependencies = [
 ]
 
 async function main() {
-  for (let i = 0; i < dependencies.length; i++) {
-    await run('git', ['clone', dependencies[i].url, dependencies[i].path])
-  }
+  for (let i = 0; i < dependencies.length; i++)
+    run('git', ['clone', dependencies[i].url, dependencies[i].path])
 }
 
-main().catch(err => { console.error(err) })
+main().catch((err) => { console.error(err) })
