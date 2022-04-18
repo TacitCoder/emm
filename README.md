@@ -13,14 +13,27 @@
 
 ## Development
 
-#### [Node.js](https://nodejs.org)
-
 #### [Rust](https://www.rust-lang.org)
 
-- [Tauri](https://tauri.studio)
+- [Microsoft C++ Build Tools](https://visualstudio.microsoft.com/visual-cpp-build-tools/)
+  - Workloads: Deskyop development with C++
+  - Individual components: Windows 10 SDK
+  - Language packs: English
+
+- [Rustup](https://rustup.rs/)
+
+#### [Git](https://git-scm.com)
+
+#### [Node.js](https://nodejs.org)
+
+```
+corepack enable pnpm
+```
+
+#### [VSCode](https://code.visualstudio.com)
 
 ```sh
 git clone https://github.com/TacitCoder/emm
 cd emm
-pnpm install
+pnpm run init
 ```
