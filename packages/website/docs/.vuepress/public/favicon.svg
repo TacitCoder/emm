@@ -20,24 +20,22 @@
     svg {
       stroke-linecap: round;
       stroke-linejoin: round;
-      --color: #ffffff;
-      --background-color: #7c00fc;
     }
 
     use {
-      stroke: var(--color);
+      stroke: #ffffff;
       fill: none
     }
 
     rect.background {
-      stroke: var(--background-color);
-      fill: var(--background-color);
+      stroke: #7c00fc;
+      fill: #7c00fc;
       stroke-width: 3px;
     }
 
     rect.content {
-      stroke: var(--color);
-      fill: var(--color);
+      stroke: #ffffff;
+      fill: #ffffff;
     }
   </style>
 </svg>
