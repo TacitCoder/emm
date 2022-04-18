@@ -5,7 +5,7 @@ const { t } = useI18n()
 const p = ref(0)
 
 onMounted(() => {
-  useFlow().hotReload()
+  // useFlow().hotReload()
   performance.mark('overview')
   p.value = performance.getEntriesByName('overview')[0].startTime - 3000
 })

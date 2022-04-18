@@ -24,7 +24,7 @@ onMounted(async() => {
   .header.flex
     .title Editor&nbsp;
     .path-btn.font-mono
-      span(v-for="(v, i) in displayPathItems" @click="$router.push(links[i])") {{ v }}
+      span(v-for="(v, i) in displayPathItems" @click="$router.push(lines[i])") {{ v }}
   .content.grow.flex.overflow-hidden
     .aside.explorer
     .main.grow.overflow-auto.font-mono

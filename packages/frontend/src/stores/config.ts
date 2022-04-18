@@ -67,7 +67,7 @@ export const useConfig = defineStore('config', {
     },
     async load() {
       const native = useNative()
-      const data = parse(await native.readFile(`MOD/${DefaultConfigName}`))
+      const data: any = parse(await native.readFile(`MOD/${DefaultConfigName}`))
       this.Locale = data.Locale
       this.ThemeMode = data.ThemeMode
       this.ThemeColor = data.ThemeColor

@@ -1,6 +1,5 @@
 import { acceptHMRUpdate, defineStore } from 'pinia'
 import { nanoid } from 'nanoid'
-import { native } from '@native-apps/api'
 import { useCache } from './cache'
 import type { EntryID, File, Folder } from './cache'
 import type { FileEntry } from './native'
