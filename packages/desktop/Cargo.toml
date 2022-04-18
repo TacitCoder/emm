@@ -12,6 +12,7 @@ encoding_rs = "*"
 lzma-rs = "*"
 serde = { version = "*", features = ["derive"] }
 serde_json = "*"
+# https://crates.io/crates/tauri/versions
 tauri = { version = "1.0.0-rc.6", features = ["api-all", "dialog"] }
 window-shadows = "*"
 window-vibrancy = "*"
@@ -28,6 +29,7 @@ path = "../../dependencies/tauri-plugin-log"
 path = "../../dependencies/tauri-plugin-fs-extra"
 
 [build-dependencies]
+# https://crates.io/crates/tauri-build/versions
 tauri-build = { version = "1.0.0-rc.5", features = [] }
 
 [features]

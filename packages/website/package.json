@@ -6,7 +6,7 @@
   "scripts": {
     "dev": "vuepress dev docs",
     "build": "vuepress build docs",
-    "clean": "rimraf docs/.vuepress/.cache docs/.vuepress/.temp node_modules",
+    "clean": "rimraf docs/.vuepress/dist docs/.vuepress/.cache docs/.vuepress/.temp node_modules",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {

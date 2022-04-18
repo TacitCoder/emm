@@ -5,8 +5,10 @@
   "main": "",
   "scripts": {
     "dev": "vite",
-    "build": "vue-tsc --noEmit && vite build",
-    "clean": "rimraf node_modules",
+    "check": "vue-tsc --noEmit",
+    "build": "nr -C ../parser build && vite build",
+    "preview": "vite preview",
+    "clean": "rimraf components.d.ts auto-imports.d.ts dist node_modules",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -58,7 +60,6 @@
     "@vueuse/integrations": "^8.2.4",
     "@vueuse/motion": "^2.0.0-beta.12",
     "diff": "^5.0.0",
-    "erabasic-parser": "link:..\\parser",
     "google-translate-api": "^2.3.0",
     "grammkit": "^0.7.1",
     "gray-matter": "^4.0.3",
@@ -71,9 +72,6 @@
     "pinia": "^2.0.13",
     "quill": "^1.3.7",
     "simplemde": "^1.11.2",
-    "tauri-plugin-fs-extra-api": "link:..\\..\\dependencies\\tauri-plugin-fs-extra",
-    "tauri-plugin-fs-watch-api": "link:..\\..\\dependencies\\tauri-plugin-fs-watch",
-    "tauri-plugin-log-api": "link:..\\..\\dependencies\\tauri-plugin-log",
     "vue": "^3.2.31",
     "vue-i18n": "^9.1.9",
     "vue-page-guide": "^0.2.0",
@@ -120,5 +118,11 @@
     "vite-plugin-vue-layouts": "^0.6.0",
     "vitest": "^0.8.4",
     "vue-tsc": "^0.33.9"
+  },
+  "optionalDependencies": {
+    "erabasic-parser": "workspace:*",
+    "tauri-plugin-fs-extra-api": "workspace:*",
+    "tauri-plugin-fs-watch-api": "workspace:*",
+    "tauri-plugin-log-api": "workspace:*"
   }
 }

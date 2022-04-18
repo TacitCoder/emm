@@ -8,8 +8,8 @@
     "upgrade": "nu",
     "dev": "tauri dev",
     "build": "tauri build",
-    "clean": "rimraf target node_modules",
-    "generate:icon": "esmo scripts/generateIcon.ts && tauricon node_modules/favicon.png",
+    "clean": "rimraf Cargo.lock icons MOD ERB CSV target node_modules",
+    "generate:icon": "esmo scripts/generateIcon.ts && tauricon desktop/node_modules/favicon.png",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -26,13 +26,13 @@
   },
   "homepage": "https://github.com/TacitCoder/emm/packages/desktop#readme",
   "private": true,
-  "dependencies": {
-    "@tauri-apps/tauricon": "link:..\\..\\dependencies\\tauricon"
-  },
   "devDependencies": {
     "@tauri-apps/cli": "^1.0.0-rc.8",
     "@types/sharp": "0.29.5",
     "sharp": "0.29.3",
     "svgo": "^2.8.0"
+  },
+  "optionalDependencies": {
+    "@tauri-apps/tauricon": "workspace:*"
   }
 }
